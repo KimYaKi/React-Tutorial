@@ -37,6 +37,10 @@ class App extends Component {
           customers.map(c => {
             return (
               <Customer
+                /**
+                 * map로 컴포넌트를 출력 할 때에는
+                 * 'key'의 값이 있어야 함
+                 */
                 key={c.id}
                 id={c.id}
                 image={c.image}
